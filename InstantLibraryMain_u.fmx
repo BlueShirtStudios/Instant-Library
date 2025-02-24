@@ -1,0 +1,289 @@
+object frmInstantLibMain: TfrmInstantLibMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 487
+  ClientWidth = 372
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object tbcMain: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 372.000000000000000000
+    Size.Height = 487.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      372s
+      438s
+      372s
+      438s)
+    object tbiViewList: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.Trimming = None
+      IsSelected = True
+      Size.Width = 186.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'View Booklist'
+      ExplicitSize.cx = 132.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object memViewList: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        EnableDragHighlight = False
+        Position.X = 16.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 441.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 321.000000000000000000
+        Viewport.Height = 433.000000000000000000
+        object ListBox1: TListBox
+          Position.X = 415.000000000000000000
+          Position.Y = 80.000000000000000000
+          TabOrder = 0
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 200.000000000000000000
+          Viewport.Height = 200.000000000000000000
+        end
+      end
+      object edtSearchAuthor: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Text = 'Enter author name'
+        Position.X = 16.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        object SearchEdtBtnAuthor: TSearchEditButton
+          Touch.InteractiveGestures = [LongTap]
+          CanFocus = False
+          Cursor = crArrow
+          TextSettings.Trimming = None
+          Size.Width = 32.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+    end
+    object tbiEditList: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.Trimming = None
+      IsSelected = False
+      Size.Width = 186.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Edit Booklist'
+      ExplicitSize.cx = 133.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object memEditList: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Position.X = 13.000000000000000000
+        Position.Y = 288.000000000000000000
+        Size.Width = 347.000000000000000000
+        Size.Height = 271.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 339.000000000000000000
+        Viewport.Height = 263.000000000000000000
+        object ListBox2: TListBox
+          Position.X = 415.000000000000000000
+          Position.Y = 80.000000000000000000
+          TabOrder = 0
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 200.000000000000000000
+          Viewport.Height = 200.000000000000000000
+        end
+        object Button1: TButton
+          Position.X = 169.000000000000000000
+          Position.Y = -320.000000000000000000
+          TabOrder = 1
+          Text = 'Button1'
+          TextSettings.Trimming = None
+        end
+      end
+      object edtSeriesName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Position.X = 47.000000000000000000
+        Position.Y = 97.000000000000000000
+        Enabled = False
+        Size.Width = 222.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object edtAuthor: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Position.X = 47.000000000000000000
+        Position.Y = 177.000000000000000000
+        Enabled = False
+        Size.Width = 222.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        object chkAlreadyRead: TCheckBox
+          Enabled = False
+          Position.Y = 45.000000000000000000
+          Size.Width = 289.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Did you already read this book?'
+        end
+      end
+      object pnlToolbar: TPanel
+        Position.Y = -4.000000000000000000
+        Size.Width = 363.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object btnEditList: TCornerButton
+          Position.X = 8.000000000000000000
+          Position.Y = 16.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 158.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Rearrange'
+          TextSettings.Trimming = None
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = btnEditListClick
+        end
+        object btnAdd: TCornerButton
+          Position.X = 183.000000000000000000
+          Position.Y = 16.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 172.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Expand'
+          TextSettings.Trimming = None
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = btnAddClick
+        end
+      end
+      object edtBookName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 5
+        Position.X = 47.000000000000000000
+        Position.Y = 137.000000000000000000
+        Enabled = False
+        Size.Width = 222.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object btnAddLibrary: TCornerButton
+        Enabled = False
+        Position.X = 8.000000000000000000
+        Position.Y = 249.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 145.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Add to Library'
+        TextSettings.Trimming = None
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnAddLibraryClick
+      end
+      object chkIsStandAlone: TCheckBox
+        Enabled = False
+        Position.X = 47.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'Is it a stand alone book?'
+        object btnDeleteItems: TCornerButton
+          Position.X = 270.000000000000000000
+          Position.Y = 179.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 43.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 15
+          Text = 'Delete'
+          TextSettings.Trimming = None
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+        end
+      end
+      object btnSaveToList: TCornerButton
+        Enabled = False
+        Position.X = 161.000000000000000000
+        Position.Y = 249.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 148.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        Text = 'Save to Library'
+        TextSettings.Trimming = None
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnSaveToListClick
+      end
+      object btnFinalizeLibrary: TCornerButton
+        Enabled = False
+        Position.X = 317.000000000000000000
+        Position.Y = 62.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 38.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        Text = '<>'
+        TextSettings.Trimming = None
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnFinalizeLibraryClick
+      end
+      object SpeedButton1: TSpeedButton
+        Position.X = 320.000000000000000000
+        Position.Y = 127.000000000000000000
+        Text = 'SpeedButton1'
+        TextSettings.Trimming = None
+      end
+      object SpeedButton2: TSpeedButton
+        Position.X = 320.000000000000000000
+        Position.Y = 199.000000000000000000
+        Text = 'SpeedButton2'
+        TextSettings.Trimming = None
+        OnClick = SpeedButton2Click
+      end
+    end
+  end
+end
